@@ -31,3 +31,14 @@ Understand how containers functionally and operationally differ from virtual mac
                 :white_check_mark: Create a bunch of containers and link them together through virtual networks and separate data volumes
             => Use `docker-compose` to manage multiple containers
             :closed_book: With `Compose` you can use a single file called `Compose Manifest` to define all the containers you need for your app and how they should be linked together and then start them all with `docker-compose up`
+
+
+# Level up evenmore with Kubernetes
+![Kubernetes](https://upload.wikimedia.org/wikipedia/labs/thumb/b/ba/Kubernetes-icon-color.svg/2110px-Kubernetes-icon-color.svg.png)
+:point_right: Kubernetes is a container orchestration tool that helps you manage multiple containers across multiple hosts
+
+- **Kubernetes** resolve following Challenge of **Docker**:
+    - Difficult to link Docker networks together across multiple hosts
+    - Controlling Docker containers across multiple hosts is cumbersome
+    - No built-in solution from moving containers from one host to another
+    - Production concerns like scaling, load balancing, and high availability are difficult with single Docker client
