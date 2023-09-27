@@ -1,6 +1,6 @@
 # Docker Journey
  Docker self learning
-
+![Preview](https://brandslogos.com/wp-content/uploads/images/large/docker-logo.png)
 # Learning Objectives
 - [x] Define Docker and explain common use cases.
 Understand how containers functionally and operationally differ from virtual machines.
