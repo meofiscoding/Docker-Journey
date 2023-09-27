@@ -13,26 +13,21 @@ Understand how containers functionally and operationally differ from virtual mac
 # Docker best practices
 :point_right: Use verify images
 
-:point_right: Use `Container Image Scanner` to scan images if not using official images. 
-              *** Example *** : Free open source scanner
-                                * Clair
-                                * Trivy
-                                * Dagda
+:point_right: Use `Container Image Scanner` to scan images if not using official images. <br>
+              ***Example*** : Free open source scanner: Clair, Trivy, Dagda
 
-:point_right: Avoid using `latest` tag because of 3 issue:
-    * You don't know what version of the app you are downloading
-    * The app's version may change without you knowing when you run `docker pull`
-    * `lastest` can be overriden by Docker Hub, making rollbacks difficult
+:point_right: Avoid using `latest` tag because of 3 issue: <br>
+    - You don't know what version of the app you are downloading<br>
+    - The app's version may change without you knowing when you run `docker pull`<br>
+    - `lastest` can be overriden by Docker Hub, making rollbacks difficult<br>
 
-:point_right: Use ** Non-root user ** in container to ensure security of container
+:point_right: Use **Non-root user** in container to ensure security of container
 
-:point_right: If you have a web app that needs a database, web server, and cache
-                :x: don't roll them into one giant Docker images
-                :white_check_mark: Create a bunch of containers and link them together through virtual networks and separate data volumes
-            => Use `docker-compose` to manage multiple containers
-            :closed_book: With `Compose` you can use a single file called `Compose Manifest` to define all the containers you need for your app and how they should be linked together and then start them all with `docker-compose up`
-
-
+**If you have a web app that needs a database, web server, and cache** <br>
+                :x: don't roll them into one giant Docker images <br>
+                :white_check_mark: Create a bunch of containers and link them together through virtual networks and separate data volumes<br>
+            => Use `docker-compose` to manage multiple containers <br>
+            :point_right: With `Compose` you can use a single file called `Compose Manifest` to define all the containers you need for your app and how they should be linked together and then start them all with `docker-compose up`
 # Level up evenmore with Kubernetes
 ![Kubernetes](https://upload.wikimedia.org/wikipedia/labs/thumb/b/ba/Kubernetes-icon-color.svg/2110px-Kubernetes-icon-color.svg.png)
 :point_right: Kubernetes is a container orchestration tool that helps you manage multiple containers across multiple hosts
@@ -42,3 +37,4 @@ Understand how containers functionally and operationally differ from virtual mac
     - Controlling Docker containers across multiple hosts is cumbersome
     - No built-in solution from moving containers from one host to another
     - Production concerns like scaling, load balancing, and high availability are difficult with single Docker client
+
