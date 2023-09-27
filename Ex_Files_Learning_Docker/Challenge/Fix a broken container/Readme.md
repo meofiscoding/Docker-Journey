@@ -9,6 +9,8 @@
 - Solution: `docker system prune` to remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
 
 - Approach:
+    * Run `df -h /` to check the disk usage, if it is still full, you need to remove unused containers by using `docker rm <container_id>` or `docker rm -f <container_id>` to force remove
+
     * Remove unused images, `docker images` to list all images, `docker rmi <image_id>` to remove image, or remove multiple images by using `docker rmi <image_id> <image_id> <image_id> ...` or force remove by using `docker rmi -f <image_id>`
     :exclamation: You need to stop container before removing image by using `docker rm`
 
