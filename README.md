@@ -1,7 +1,7 @@
 # Docker Journey
 ![Preview](https://brandslogos.com/wp-content/uploads/images/large/docker-logo.png)
 # Learning Objectives
-*Part1*
+**Part1**
 - [x] Define Docker and explain common use cases.
 Understand how containers functionally and operationally differ from virtual machines.
 - [x] Explore three key technologies that make Docker different: layered containers, the Dockerfile, and the Docker API.
@@ -9,8 +9,9 @@ Understand how containers functionally and operationally differ from virtual mac
 - [x] Understand how to create custom container images using Dockerfiles.
 - [x] Learn how to push Docker images to the Docker registry and manage them.
 - [x] Troubleshoot common container issues using Docker CLI commands.
-- [x] Understand common best practices and problems when working with Docker containers and images.
-*Part2*
+- [x] Understand common best practices and problems when working with Docker containers and images. <br>
+
+**Part2**
 - [x] Understand the basics of Docker and how containers work.
 - [x] Learn about Docker Engine and container runtimes, including advantages and disadvantages of different options.
 - [x] Explore the Open Container Initiative and its specification on container runtimes.
