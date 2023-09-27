@@ -24,6 +24,38 @@ Understand how containers functionally and operationally differ from virtual mac
 - [x] Create and log into authenticated registries.
 - [x] Gain an understanding of best practices for working with Docker containers and images, as well as scaling with Docker Compose and Kubernetes.
 
+# Problem
+`It's Works on My Machine` 
+*Reason*:
+1. Different system configuration
+2. Missing files, hardware, or other properties
+3. Hardware dependencies
+
+*Previous Solution*:
+- Configuration Management Tools: Chef, Puppet, Ansible (Configuration as code)
+    - Require knowledge about hardware and OS
+- VM as code: Vagrant
+    - Heavy, show-ish, requires inconvenient configuration<br>
+
+=> **Docker** uses **images** and **containers** to allow apps to run anywhere, consistency
+
+# Docker Anatomy
+![Docker Anatomy](https://github.com/meofiscoding/Docker-Journey/blob/main/asset/DockerAnatomy.png)
+- Docker use `control groups`, `namespaces`, and `images` to make running apps anywhere easier
+**Docker makes containers easy**
+- Configuration through Dockerfiles, not shell commands
+- Share images with others through image registries
+- A supper easy command line client and API
+
+# Container Assumption
+![Container Assumption](https://github.com/meofiscoding/Docker-Journey/blob/main/asset/ContainerAssumption.png)
+Container  | VM
+------------- | -------------
+Run in container runtimes  | - Run on top of hypervisors
+Work alongside OS | - Need hardware emulation
+Do not require OS configuration | - Require OS configuration
+Run 1 app at a time (usually) | - Can run many app at once
+
 # Docker best practices
 :point_right: Use verify images
 
