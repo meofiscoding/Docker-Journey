@@ -11,4 +11,5 @@
     docker run -d --name website -v "$PWD/website:/usr/share/nginx/html" -p 8080:80 --rm nginx
 ```
 - Structure: docker run -d --name <container_name> -v <volume> -p <port> --rm <image_name>
-:&#128073;: Use `docker ps -a` to check if any container is running
+
+&#128073; Use `docker ps -a` to check if any container is running
