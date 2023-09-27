@@ -1,5 +1,5 @@
 ## Challenge: Starting NGINX
-![Preview](https://github.com/meofiscoding/Docker-Journey/blob/main/Challenge/Preview.gif)
+![Preview](https://github.com/meofiscoding/Docker-Journey/blob/main/Ex_Files_Learning_Docker/Challenge/StartingNGINX/asset/Preview.png)
 - [x] Start an instance of NGINX in Docker with the included website
 - [x] Name the container `website`
 - [x] Website should be accessible at `http://localhost:8080`
