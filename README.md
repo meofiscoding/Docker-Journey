@@ -75,8 +75,7 @@ Run 1 app at a time (usually) | - Can run many app at once
                 :white_check_mark: Create a bunch of containers and link them together through virtual networks and separate data volumes<br>
             => Use `docker-compose` to manage multiple containers <br>
             :point_right: With `Compose` you can use a single file called `Compose Manifest` to define all the containers you need for your app and how they should be linked together and then start them all with `docker-compose up`
-# Level up evenmore with Kubernetes
-![Kubernetes](https://upload.wikimedia.org/wikipedia/labs/thumb/b/ba/Kubernetes-icon-color.svg/2110px-Kubernetes-icon-color.svg.png)
+# <img src="https://upload.wikimedia.org/wikipedia/labs/thumb/b/ba/Kubernetes-icon-color.svg/2110px-Kubernetes-icon-color.svg.png" style="width: 80px" /> Level up evenmore with Kubernetes 
 :point_right: Kubernetes is a container orchestration tool that helps you manage multiple containers across multiple hosts
 
 - **Kubernetes** resolve following Challenge of **Docker**:
