@@ -14,5 +14,7 @@
 
 FROM golang:1.18
 WORKDIR /app
+COPY . /app
+ENV APP_USER="Carlos"
 RUN go build -o /test-app /app && chmod +x /test-app
 ENTRYPOINT [ "/test-app" ]
