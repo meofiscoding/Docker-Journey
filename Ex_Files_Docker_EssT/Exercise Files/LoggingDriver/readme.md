@@ -16,3 +16,8 @@ docker logs test-container
 cd /var/lib/docker/containers/<container-id>/<container-id>-json.log
 ```
 
+- To disable the logging driver, use this command below:
+``` bash
+docker run --log-driver none --name test-container my-image
+```
+
