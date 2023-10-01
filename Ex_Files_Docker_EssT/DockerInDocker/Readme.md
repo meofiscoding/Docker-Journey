@@ -14,7 +14,7 @@
 - The command above uisng curl to communicate with the UNIX socket
 - Since we're going to be talking to the Docker Engine by HTTP so we have to put http:// here
 - Since we're talking through a UNIX socket, we actually don't need a valid host name here, we can put anything we want
--  Finally, we need to provide an endpoint within the Docker engine that we want to interact with. The Docker engine has a lot of [endpoint](https://docs.docker.com/engine/api/latest) that we can interact with. I
+-  Finally, we need to provide an endpoint within the Docker engine that we want to interact with. The Docker engine has a lot of [endpoint](https://docs.docker.com/engine/api/latest) that we can interact with. 
 - Since we're just testing that we can communicate with the Docker engine, let's try to list containers. The endpoint to do that is `/containers/json`
 
 3. Install Docker client
