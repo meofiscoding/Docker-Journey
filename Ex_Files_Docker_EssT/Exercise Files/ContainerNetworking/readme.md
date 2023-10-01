@@ -30,4 +30,12 @@ docker run -d --name <container-name> --network <network-name> <image-name>
 ```bash
 docker network connect <network-name> <container-name>
 ```
- :bangbang: Only container in same network can communicate with each other 
+ :bangbang: 
+ - Only container in same network can communicate with each other  
+ - You have to stop a container and then connect to another container's network and start it again to make it work
+
+ ### Exposing Container Port between Container ###
+ - To expose a port between container, run this command:
+```bash
+    docker run -d --name <container-name> -p <host-port>:<container-port> <image-name>
+```
